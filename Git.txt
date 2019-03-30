@@ -3,8 +3,9 @@
 ②ローカルリポジトリを作成(git init)
 ③フォルダに任意のファイルを配置(ex4.html)
 ④git add ex4.html(ローカルにファイルを登録)
-⑤git remote add origin https://github.com/Kou3141/helloworld.git(リモートリポジトリのアドレス指定)
-⑥git push origin master
+⑤git commit -m "add new file"
+⑥git remote add origin https://github.com/Kou3141/helloworld.git(リモートリポジトリのアドレス指定)
+⑦git push origin master
 
 【pull手順】
 ①git remote add origin https://github.com/Kou3141/helloworld.git(リモートリポジトリのアドレス指定)

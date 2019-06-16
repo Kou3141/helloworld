@@ -1,0 +1,21 @@
+【push手順】
+①デスクトップに任意をフォルダを作成（仮にhelloworld）
+②ローカルリポジトリを作成(git init)
+③フォルダに任意のファイルを配置(ex4.html)
+④git add ex4.html(ローカルにファイルを登録)
+⑤git commit -m "add new file"
+⑥git remote add origin https://github.com/Kou3141/helloworld.git(リモートリポジトリのアドレス指定)
+⑦git push origin master
+
+【pull手順】
+①git remote add origin https://github.com/Kou3141/helloworld.git(リモートリポジトリのアドレス指定)
+②git merge --allow-unrelated-histories origin/master
+③git pull origin master
+
+
+【コマンド集】
+■origin消す
+git remote rm origin
+■origin確認
+git remote -v
+

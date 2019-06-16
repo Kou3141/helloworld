@@ -3,53 +3,62 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
-	<title> infratop</title>
+	<title> Shingoの数学ノート</title>
+	<!-- 共通化のためのjavascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script>
+		//共通パーツ読み込み
+		 $(function() {
+		 $("#header").load("./include/header.html");
+ 		 $("#sidebar").load("./include/sidebar.html");
+  		 $("#footer").load("./include/footer.html");
+		});
+	</script>
+	<!-- 画像の大小 -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
+	<style type="text/css">
+	    #largeImg{
+	        display: none;  // 非表示
+	    }
+	</style>
+	<!-- code syntax -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=py&skin=desert"></script>
+	<!-- texコード書く -->
+	 <script type="text/x-mathjax-config">
+	 	MathJax.Hub.Config({ tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']], 
+        displayMath: [['$$','$$'], ['\\[','\\]']], 
+        processEscapes: true }
+		}); 
+	</script>
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+	<!-- いいねボタン作成 -->
+	<script type="text/javascript" src="/mod/LKBNX/v1.15/demo/cn/cn.php"></script>
 </head>
 <body>
-	<header>
-		<h1 class="headline">
-			<a href="index.html"> infratop</a>
-		</h1>
-	</header>
-	<nav>
-		<ul class="nav-list">
-			<li class="nav-list-item">
-				<a href="index.html">webcamp</a>
-			</li>
-			<li class="nav-list-item">
-				<a href="index.html">webcamp pro</a>
-			</li>
-			<li class="nav-list-item">
-				<a href="index.html">webcamp woman</a>
-			</li>
-			<li class="nav-list-item">
-				<a href="index.html">webcamp career</a>
-			</li>
-		</ul>
-	</nav>
-	<div class="kuuhaku"></div>
-	<div class="main clearfix">
-		<div class="a1"></div>
-		<div class="a2"></div>
-		<div class="a3"></div>
-		<div class="a4"></div>
-	</div>
-	<div class="main clearfix">
-		<div class="b1"></div>
-		<div class="b2"></div>
-		<div class="b3"></div>
-		<div class="b4"></div>
-	</div>
-	<div class="main clearfix">
-		<div class="c1"></div>
-		<div class="c2"></div>
-		<div class="c3"></div>
-		<div class="c4"></div>
-	</div>
-	<div class="kuuhaku"></div>
-	<footer>
+<!-- ヘッダー読み込み -->
+	<div id="header"></div>
 
-		<p class="footer-text">© All rights reserved by Infratop.Inc.</p>
-	</footer>
+<!-- メインクラス -->
+	<div class="main">
+		<div class="a1">
+<!-- 見出し -->
+			<br>
+			<h2>
+				見出し用ページ
+			</h2>
+			<br>
+<!-- 本文 -->
+			<font size=3 color="000000">
+				見出し用ページです。ブログ記事は右下のカテゴリや月別アーカイブから辿っていっていください。書くページでコメントやいいねしてくださると嬉しいです！
+			</font>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</div>
+<!-- サイドバー読み込み -->
+		<div id="sidebar"></div>
+	</div>
+<!-- フッター読み込み -->
+	<div id="footer"></div>
 </body>
 </html>

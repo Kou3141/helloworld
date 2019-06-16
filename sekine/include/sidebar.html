@@ -1,0 +1,90 @@
+<!-- プロフィール -->
+<div class="a2">
+	<p>
+		プロフィール
+	</p>
+	<hr>
+	<br>
+	<div class="gallery"><img class="icon" src="picture/prof.jpg" align="middle">Shingo.S</div>
+	<div id="largeImg"><img class="icon_large" src="picture/prof.jpg"></div>
+	<script type="text/javascript">
+		$('.gallery img').click(function(e) {
+		    $('#largeImg')
+		        .css({
+		            'position': 'absolute',
+		            'left'    : Math.floor(($(window).width() - 800) / 2) + 'px',
+		            'top'     : $(window).scrollTop() + 30 + 'px'
+		        })
+		        .fadeIn();
+				});
+		$('#largeImg').click(function() {
+		    $('#largeImg').fadeOut('slow', function() {$('#back-curtain').hide();});
+		});
+	</script>
+
+	<font size=2 color="000000">
+	<p>
+	<br>
+	社会人3年目のデータサイエンティスト。<br>
+	主にPython、SAS、Swiftを使用。<br>
+	データ分析、画像認識、自然言語処理をメインに記事を投稿していきます。<br>
+	<a href="https://twitter.com/shingo97358922">twitter</a>やってます。フォローしていただけると嬉しいです。
+	</p>
+	</font>
+		
+</div>
+
+<!-- 月別アーカイブ -->
+<div class="a2">
+	<p>
+		月別アーカイブ
+	</p>
+	<hr>
+	<font size=2 color="000000">
+		<!-- 折り畳み展開ポインタ -->
+		<div onclick="obj=document.getElementById('201906').style; obj.display=(obj.display=='none')?'block':'none';">
+			<a style="cursor:pointer;margin:0">
+				▼ 2019年6月 (1)
+			</a>
+		</div>
+		<!--// 折り畳み展開ポインタ -->
+
+		<!-- 折り畳まれ部分 -->
+		<div id="201906" style="display:none;clear:both;margin:0 0 0 10%">
+
+			<ul>
+
+			<li><a href="./blog1.html">大数の法則と収束の種類</a></li>
+
+			</ul>
+		</div>
+	</font>
+</div>
+
+
+<!-- 月別アーカイブ -->
+<div class="a2">
+	<p>
+		カテゴリ
+	</p>
+	<hr>
+	<font size=2 color="000000">
+		<!-- 折り畳み展開ポインタ -->
+		<div onclick="obj=document.getElementById('データ分析').style; obj.display=(obj.display=='none')?'block':'none';">
+			<a style="cursor:pointer;margin:0">
+				▼ データ分析 (1)
+			</a>
+		</div>
+		<!--// 折り畳み展開ポインタ -->
+
+		<!-- 折り畳まれ部分 -->
+		<div id="データ分析" style="display:none;clear:both;margin:0 0 0 10%">
+
+			<ul>
+
+			<li><a href="./blog1.html">大数の法則と収束の種類</a></li>
+
+			</ul>
+		</div>
+	</font>
+</div>

@@ -5,145 +5,126 @@
 	/*border-style: none;*/
 }
 
-.clearfix::after {
-	content: "";
-	display: block;
-	clear: both;
+ul, ol {
+  padding-left:20px;
 }
+
+body {
+  /* 裏の画像ファイルの指定 */
+  background-image: url(picture/star.jpg);
+   
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: right;
+   
+  /* 背景画像が読み込まれる前に表示される背景のカラー */
+  background-color: #464646;
+
+  line-height: 180%;
+}
+
+/*コード書く時ときの*/
+pre.prettyprint {
+  overflow: auto;
+  resize: horizontal;
+  padding-left:40px;
+  line-height: 100%;
+}
+pre.prettyprint ol.linenums > li {
+  list-style-type: decimal; 
+}
+
+.code_kekka{
+	background-color:#333333;
+	color: #ffffff;
+	padding-left:40px;
+	line-height: 100%;
+}
+
+.hr_hajime{
+	border-top: 1px solid #000000;
+}
+.hr_subtitle{
+	border-top: 1px solid #bbbbbb;
+}
+
 header {
-	width: 100%;
-	padding: 20px 0;
-	margin: 0 auto;
-	text-align: center;
+	height: 250px;
+	width: 50%;
+	padding: 40px 0 0 0;
+	margin: 20px 0 0 7%;
+	float: left;
 }
-
-header .headline{
-	font-size:40px;
-}
-
-.nav-list {
- 	border-top: 1px solid #000;
- 	border-bottom: 1px solid #000;
- 	text-align: center;
-	padding: 15px 0;
-	margin: 0 auto;
-}
-
-.nav-list-item {
-	list-style: none;
-	display: inline-block;
-	margin: 0 20px;
-}
-
-.kuuhaku {
-	text-align: center;
-	height: 50px;
-}
-
+/*body*/
 .main {
-	height: 200px;
-	width: 800px;
-	font-size:0;
-	margin:auto;
+	width: 95%;
+	height: auto;
+	font-size:10;
+	margin: 0 0 5% 5%;
 }
 
 .a1 {
-	width: 200px;
-	height: 200px;
+	width: 60%;
+	height: 100%;
 	display: inline-block;
-	background-color: #e6ffe9;
+	margin:0 2% 5% 0%;
+	padding:1%;
+	float:left;
+	background-color: #FFFFFF;
+	position: relative;
 }
-
 .a2 {
-	width: 200px;
-	height: 200px;
+	width: 25%;
+	/*height: 300px;*/
 	display: inline-block;
-	background-color: #cbffd3;
+	margin:0 0 5% 5%;
+	padding:1%;
+	float:left;
+	background-color: #FFFFFF;
+    text-align: left;
+    word-break:break-all;
 }
-
-.a3 {
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	background-color: #aeffbd;
+/*.comment_bottom {
+	position: absolute;
+	bottom: 0px;
 }
-
-.a4 {
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	background-color: #93ffab;
+*/
+/*まるでかこむ(タグ専用)*/
+.box2 {
+    padding: 0 5px;
+    margin: 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 1px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
 }
-
-.b1 {
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	background-color: #f3ffd8;
+/*アイコン画像用*/
+.icon {
+    width:  50px;       /* ※縦横を同値に */
+    height: 50px;       /* ※縦横を同値に */
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    background-position: center;  /* 横長画像の左上を基準に表示 */
+    padding:0;
+    margin:0 5px;
 }
-
-.b2 {
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	background-color: #edffbe;
+/*アイコン画像用(拡大)*/
+.icon_large {
+    width:  800px;       /* ※縦横を同値に */
+    height: 800px;       /* ※縦横を同値に */
+        border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    background-position: center;  /* 横長画像の左上を基準に表示 */
+    padding:0;
+    margin:0 5px;
 }
-
-.b3 {
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	background-color: #e9ffa5;
-}
-
-.b4 {
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	background-color: #e4ff8d;
-}
-
-.c1 {
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	background-color: #d9e5ff;
-}
-
-.c2 {
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	background-color: #bad3ff;
-}
-
-.c3 {
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	background-color: #a4c6ff;
-}
-
-.c4 {
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	background-color: #8eb8ff;
-}
-
-.sidebar {
-	width: 240px;
-	height: 1400px;
-	float: left;
-}
-
-
-footer {
-	width:100%;
-	height:120px;
+footer {  
+	clear:left;
+	margin:0px;
+	padding:0;
+	bottom: 0px;
+  	width:100%;
+	height:50px;
 	text-align: center;
-	padding: 50px 0;
-	background-color: #848282
+	background-color: #848282;
 }
 
 .footer-text{
